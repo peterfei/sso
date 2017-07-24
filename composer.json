@@ -1,19 +1,17 @@
 {
-    "name": "jasny/sso",
+    "name": "peterfei/sso",
     "description": "Simple Single Sign-On",
     "keywords": ["sso", "auth"],
     "license": "MIT",
-    "homepage": "http://www.jasny.net/articles/simple-single-sign-on-for-php/",
+    "homepage": "http://peterfei.github.io",
     "authors": [
         {
-            "name": "Arnold Daniels",
-            "email": "arnold@jasny.net",
-            "homepage": "http://www.jasny.net"
+            "name": "peterfei",
+            "email": "peterfei@oneworldtech.net"
         }
     ],
     "support": {
-        "issues": "https://github.com/jasny/sso/issues",
-        "source": "https://github.com/jasny/sso"
+        "source": "https://github.com/peterfei/sso_php"
     },
     "require": {
         "php": ">=5.5.0",
