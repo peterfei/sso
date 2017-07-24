@@ -11,12 +11,12 @@
         }
     ],
     "support": {
-        "source": "https://github.com/peterfei/sso_php"
+        "source": "https://github.com/peterfei/sso"
     },
     "require": {
         "php": ">=5.5.0",
-        "desarrolla2/cache": "^2.0.0",
-        "jasny/validation-result": "^1.0.0"
+        "desarrolla2/cache": "^2.1",
+        "jasny/validation-result": "^1.0"
     },
     "require-dev": {
         "codeception/codeception": "^2.1.0",
@@ -24,8 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jasny\\SSO\\": "src/"
+            "Peterfei\\SSO\\": "src/"
         }
     }
 }
-
