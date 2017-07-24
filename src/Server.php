@@ -1,5 +1,5 @@
 <?php
-namespace Jasny\SSO;
+namespace Peterfei\SSO;
 
 use Desarrolla2\Cache\Cache;
 use Desarrolla2\Cache\Adapter;

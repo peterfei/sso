@@ -2,7 +2,7 @@
 // require_once('./config.php');
 // require_once(DIR_SYSTEM.'/library/logger.php');
 
-namespace Jasny\SSO;
+namespace Peterfei\SSO;
 
 /**
  * Single sign-on broker.

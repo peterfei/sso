@@ -1,5 +1,5 @@
 <?php
-namespace Jasny\SSO;
+namespace Peterfei\SSO;
 
 /**
  * Exception thrown when a request is done while no session is attached
