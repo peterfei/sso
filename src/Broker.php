@@ -3,6 +3,7 @@
 // require_once(DIR_SYSTEM.'/library/logger.php');
 
 namespace Peterfei\SSO;
+require_once 'Exception.php';
 
 /**
  * Single sign-on broker.
@@ -227,10 +228,14 @@ class Broker
         // }
 
         $data = json_decode($response, true);
+
+        // var_dump($data);exit;
         if ($httpCode == 403) {
             $this->clearToken();
             throw new NotAttachedException($data['error'] ?: $response, $httpCode);
         }
+        // var_dump($response);exit;
+        // echo $data['error'];exit;
         if ($httpCode >= 400) throw new Exception($data['error'] ?: $response, $httpCode);
         // var_dump($data);exit;
         return $data;
