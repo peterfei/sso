@@ -107,16 +107,12 @@ abstract class Server
          */
         protected function getBrokerSessionID()
         {   
-            // if (!function_exists('getallheaders')) {
-                
-            // }
-            // var_dump($this->getallheaders());exit;
-             // echo 111;exit;
-            $headers = $this->getallheaders();
-            
-            // var_dump($headers);exit;
-            // echo 111;exit;
-            // echo 111;exit;
+            if (!function_exists('getallheaders')) {
+                    $headers = $this->getallheaders();
+             }else{
+
+                $headers = getallheaders();
+             }
             if (isset($headers['Authorization']) &&  strpos($headers['Authorization'], 'Bearer') === 0) {
                 $headers['Authorization'] = substr($headers['Authorization'], 7);
                 return $headers['Authorization'];
